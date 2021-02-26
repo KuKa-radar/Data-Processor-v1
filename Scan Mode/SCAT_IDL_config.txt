@@ -1,0 +1,71 @@
+SCATT IDL Configuration File
+
+instrument_name:
+Ku-Scat
+
+i_calibrate: 0 to read existing cal file; 1 to calibrate with corner reflector; 2 to calibrate rx distortion matrix 
+0
+
+calfile: filename of calibration file. write "select" if you want to pick a file manually
+Ku-Scat-20190731-145910.cal
+
+i_raw_plot: 0 skip plotting; 1 plot one range profile for each elevation; 2 plot all range profiles; 3 to plot non-scanning data
+0
+
+i_spec_ave: 1; set to 1 to plot average power spectra
+0
+
+max_display_range: maximum range in meters to display
+400
+
+i_peak_search: 0 for auto-search; 1 allow manual adjustment
+1
+
+pedestal_height_offset; add this value to pedestal height to adjust signal peak estimate 
+1.0
+
+i_leakage: 0 for no leakage subtraction; 1 for sky-noise leakage subtraction; 2 for box-car leakage subtraction
+0
+
+i_corner_process: set to 1 to process Mueller matrix, etc. for corner reflector data
+0
+
+i_pol_scat: 1 to show polarization scatter plots
+0
+
+i_pol_signature: 1 to show polarization signatures
+0
+
+i_pol_data_in_footprint: 1 to show polarimetric parameters vs range bin within footprint
+0
+
+i_plot_hh_phase: 1 to plot phase difference of hh0/hh1 sweeps (N/A)
+0
+
+i_temp_time_plot: 1 to plot RF unit temp vs time and data block time
+1
+
+i_normal: 0 for flat surface targets; set to 1 when viewing vertical targets like side of a building
+0
+
+delta_r_impulse: 0.8 typical; -14.5 dB full width of impulse response relative to peak
+0.84
+
+range_offset_hh: use to align peak response with VV
+.09
+
+range_offset_vh: use to align vh peak response with VV
+.09
+
+range_offset_hv: use to align hv peak response with VV
+0.0
+
+raw_data_path: data file path for location of raw data
+F:\kuka_radar\exdata\KuKa_test\Data
+
+processed_data_path: data file path for location of raw data
+F:\kuka_radar\exdata\KuKa_test\Ku_Processed_40_45
+
+
+
+

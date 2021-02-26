@@ -1,0 +1,93 @@
+SCAT  IDL Configuration File
+
+instrument_name:
+Ka-Scat
+
+i_sub_band: set to 1 to process sub-band
+0
+
+sub_bandwidth: bandwidth of sub-band in MHz
+4000.
+
+sub_center_frequency: center frequency of sub-band in MHz
+35000.0
+
+i_calibrate: 0 to read existing cal file;1: find tx/rx distortion matrix using isotropic medium
+0
+
+calfile: filename of calibration file. write "select" if you want to pick a file manually
+Ka-Scat-20190731-145910.cal
+
+i_corner_cal_override: 0: use current calibration data stored in data file header; 1: use absolute cal data in calfile
+1
+
+i_cal_loop_override: 0: scale NRCS by change in int. cal loop power; 1: do not scale NRCS for cal loop power change
+1
+
+i_batch: 0 for single file; 1 for batch processing
+1
+
+i_raw_plot: 0 skip plotting; 1 plot one range profile for each elevation; 2 plot all range profiles; 3 to plot non-scanning data
+0
+
+max_display_range: maximum range in meters to display
+40
+
+i_proc_ind: set to 1 to only process independent samples due to motion in stare data
+0
+
+n_blocks_ind_per_group: number of ind. samps per group when i_proc_ind=1
+40
+
+i_az_override: set to 1 to process a limited azimuth segment
+1
+
+azmin_proc: minimum azimuth angle to process when i_az_override=1
+40
+
+azmax_proc: maximum azimuth angle to process when i_az_override=1
+45
+
+i_el_override: set to 1 to process a limited range of elevation angles 
+0
+
+elmin_proc: minimum elevation angle to process when i_el_override=1
+10
+
+elmax_proc: maximum elevation angle to process when i_el_override=1
+35
+
+i_corner_process: set to 1 to process Mueller matrix, etc. for corner reflector data
+0
+
+i_pol_scat: 1 to show polarization scatter plots
+0
+
+i_pol_signature: 1 to show polarization signatures
+0
+
+i_pol_data_in_footprint: 1 to show polarimetric parameters vs range bin within footprint
+0
+
+smoothfac: boxcar average length to smooth polarimetric parameters vs range bin 
+20
+
+i_temp_time_plot: 1 to plot RF unit temp vs time and data block time
+1
+
+proc_thresh_left_dB (negative dB value): include all data from this threshold left of peak to peak 
+-50.0
+
+proc_thresh_right_dB (negative dB value): include all data from right of peak to this threshold right of peak 
+-50.0
+
+group_averaging_time, s: averaging time in stare mode
+60.0
+
+raw_data_path: data file path for location of raw data
+F:\kuka_radar\exdata\KuKa_test\Data
+
+processed_data_path: data file path for location of raw data
+F:\kuka_radar\exdata\KuKa_test\Ka_Processed_40_45
+
+

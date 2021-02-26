@@ -1,0 +1,84 @@
+config_t = { $
+ad_clock_frequency_hz: 0.0D, $
+chirp_amplitude_dbm: 0.0D, $
+chirp_bandwidth_hz: 0.0D, $
+chirp_center_frequency_hz: 0.0D, $
+chirp_width_ns: 0LL, $
+decimation: 0UL, $
+decimation_mode: 0UL, $
+decimation_setting: 0UL, $
+file_roll_interval_ns: 0LL, $
+frame_delay_ns: 0LL, $
+n_gates: 0UL, $
+n_gates_override: 0UL, $
+n_gates_use_override: 0B, $
+pedestal_height_m: 0.0D, $
+prp_ns: 0LL, $
+range_resolution_m: 0.0D, $
+range_to_corner_reflector_m: 0.0D, $
+server_state: 0UL, $
+switch_mode: 0UL $
+}
+private_config_t = { $
+pedestal_device_file_path: bytarr(128), $
+rcb_host: bytarr(128), $
+rcb_port: 0L, $
+rcb_scope_data_device_file_path: bytarr(128), $
+gps_device_file_path: bytarr(128), $
+scat_id: 0L, $
+always_master: 0B, $
+peer_system_enabled: 0B, $
+peer_system_host: bytarr(128), $
+antenna_beam_width: 0.0D, $
+corner_reflector_sigma: 0.0D, $
+heater_control_mode: 0B, $
+heater_control_set_point: 0.0D, $
+heater_control_lcd_panel_set_point: 0.0D, $
+heater_control_hysteresis: 0.0D, $
+heater_control_proportional_gain: 0.0D, $
+heater_control_integral_gain: 0.0D, $
+heater_control_minimum_pulse_width_ns: 0LL, $
+heater_control_pulse_period_multiplier: 0B, $
+cooler_set_point: 0.0D, $
+cooler_hysteresis: 0.0D, $
+pedestal_max_speed: 0.0D, $
+pedestal_azimuth_offset: 0.0D, $
+pedestal_elevation_offset: 0.0D, $
+range_to_antenna_m: 0.0D, $
+range_to_antenna_offset_m: 0.0D, $
+ad_trig_delay_ns: 0LL, $
+synthesizer_trig_delay_ns: 0LL, $
+along_track_tilt_offset: 0.0D, $
+cross_track_tilt_offset: 0.0D, $
+calculate_ground_indices: 0B, $
+peak_detector_copol_threshold_db: 0.0D, $
+peak_detector_crosspol_threshold_db: 0.0D, $
+peak_detector_range_window_width_m: 0.0D $
+}
+calibration_t = { $
+timestamp_seconds: 0UL, $
+corner_reflector_vv_power_dbm: 0.0D, $
+corner_reflector_hh_power_dbm: 0.0D, $
+cal_peak_dbm: 0.0D, $
+corner_reflector_range_m: 0.0D, $
+corner_reflector_az: 0.0D, $
+corner_reflector_el: 0.0D, $
+chirp_amplitude_dbm: 0.0D, $
+chirp_bandwidth_hz: 0.0D, $
+chirp_center_frequency_hz: 0.0D, $
+chirp_width_ns: 0LL, $
+decimation: 0UL, $
+decimation_mode: 0UL, $
+n_summed_gates: 0UL $
+}
+file_header_t = { $
+file_header_size: 0ULL, $
+meta_header_size: 0ULL, $
+data_size: 0ULL, $
+version_major: 0ULL, $
+version_minor: 0ULL, $
+version_patch: 0ULL, $
+config: config_t, $
+private_config: private_config_t, $
+calibration: calibration_t $
+}
