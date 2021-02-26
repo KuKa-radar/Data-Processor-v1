@@ -40,7 +40,7 @@ n_blocks_ind_per_group: number of ind. samps per group when i_proc_ind=1
 40
 
 i_az_override: set to 1 to process a limited azimuth segment
-1
+0
 
 azmin_proc: minimum azimuth angle to process when i_az_override=1
 40
@@ -85,9 +85,9 @@ group_averaging_time, s: averaging time in stare mode
 60.0
 
 raw_data_path: data file path for location of raw data
-F:\kuka_radar\exdata\KuKa_test\Data
+/path/to/raw/data/folder
 
 processed_data_path: data file path for location of raw data
-F:\kuka_radar\exdata\KuKa_test\Ka_Processed_40_45
+/path/to/processed/data/folder
 
 
