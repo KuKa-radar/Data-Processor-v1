@@ -1,6 +1,0 @@
-During data acquisition, the KuKa radar acquires data on a series of six signal states: the four transmit polarization combinations (VV, HH, HV and VH), a calibration loop signal and a noise signal. 
-Each data block consists of these six signals and are processed separately for each frequency. Data are processed into range profiles of the complex received voltage, through fast fourier transform (FFT). 
-The range profiles for each polarization combination are power-averaged in azimuth for each incidence angle. 
-Both the Ka- and Ku-band scatterometer beam scans at the programmed incidence angle, moving across the azimuth within a prescribed azimuthal angular width. 
-The system then moves up to the next incidence angle, at 5 degree increments, and scans the next elevation line along the same azimuthal angular width. 
-A new file is generated each time the positioner begins a scan. The footprint of the KuKa radar during one complete scan is a function Ku- and Ka-band antenna beamwidth, and the system geometry, with the footprint increasing in area, as incidence angle increases.
