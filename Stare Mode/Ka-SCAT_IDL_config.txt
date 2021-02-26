@@ -85,10 +85,10 @@ group_averaging_time, s: averaging time in stare mode
 60.0
 
 raw_data_path: data file path for location of raw data
-/home/mead/Manitoba_Ku-Ka_Scats/software/Ka-Scat_data
+/path/to/raw/data/folder
 
 processed_data_path: data file path for location of raw data
-/home/mead/Manitoba_Ku-Ka_Scats/software/Ka-Scat_data/processed_data
+/path/to/processed/data/folder
 
 
 
