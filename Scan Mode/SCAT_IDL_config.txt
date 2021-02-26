@@ -61,10 +61,10 @@ range_offset_hv: use to align hv peak response with VV
 0.0
 
 raw_data_path: data file path for location of raw data
-F:\kuka_radar\exdata\KuKa_test\Data
+/path/to/raw/data/folder
 
 processed_data_path: data file path for location of raw data
-F:\kuka_radar\exdata\KuKa_test\Ku_Processed_40_45
+/path/to/processed/data/folder
 
 
 
